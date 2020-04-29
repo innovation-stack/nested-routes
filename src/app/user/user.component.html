@@ -1,0 +1,11 @@
+<h1>User</h1>
+
+<div>
+  <a routerLinkActive="active" [routerLink]="[{outlets: {user: 'home'}}]">Home</a>&nbsp;&nbsp;
+  <a routerLinkActive="active" [routerLink]="[{outlets: {user: 'view'}}]">View</a>&nbsp;&nbsp;
+  <a routerLinkActive="active" [routerLink]="[{outlets: {user: 'gallery'}}]">Gallery</a>&nbsp;&nbsp;
+</div>
+
+<div>
+  <router-outlet name="user"></router-outlet>
+</div>

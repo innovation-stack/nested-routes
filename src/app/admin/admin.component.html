@@ -1,0 +1,11 @@
+<h1>Admin</h1>
+
+<div>
+  <a routerLinkActive="active" [routerLink]="[{outlets: {admin: ['dashboard']}}]">Dashboard</a>&nbsp;&nbsp;
+  <a routerLinkActive="active" [routerLink]="[{outlets: {admin: ['manage-user']}}]">Manage User</a>&nbsp;&nbsp;
+  <a routerLinkActive="active" [routerLink]="[{outlets: {admin: ['manage-gallery']}}]">Manage Gallery</a>&nbsp;&nbsp;
+</div>
+
+<div>
+  <router-outlet name="admin"></router-outlet>
+</div>
